@@ -15,12 +15,12 @@
     "require": {
         "php": ">=5.2.1",
         "illuminate/support": "4.2.*",
-        "google/apiclient": "1.0.*@dev"
+        "google/apiclient": "dev-master"
     },
     "autoload": {
         "psr-0": {
             "Pongo\\GoogleAPI\\": "src/"
         }
     },    
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
