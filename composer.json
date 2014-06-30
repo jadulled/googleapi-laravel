@@ -22,5 +22,5 @@
             "Pongo\\GoogleAPI\\": "src/"
         }
     },    
-    "minimum-stability": "development"
+    "minimum-stability": "dev"
 }
