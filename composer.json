@@ -1,7 +1,7 @@
 {
     "name": "pongocms/googleapi",
     "description": "a Google API v3 wrapper for Laravel 4.x",
-    "keywords": ["laravel", "google", "api", "v3"],
+    "keywords": ["laravel", "google", "api", "v3", "laravel4", "googleAPI"],
     "time": "2014-06-30",
     "license": "MIT",
     "authors": [
