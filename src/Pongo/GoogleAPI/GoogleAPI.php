@@ -33,7 +33,7 @@ class GoogleAPI {
      * Services array
      * @var array
      */
-    protected $service = [];
+    protected $service = array();
 
     /**
      * Initialize GoogleAPI class
@@ -157,7 +157,7 @@ class GoogleAPI {
     {
         $prefix = $this->getConfig('service_class_prefix');
 
-        $this->service[$service] = $this->createInstance($service, $prefix, [$this->client]);
+        $this->service[$service] = $this->createInstance($service, $prefix, array($this->client));
     }
 
     /**

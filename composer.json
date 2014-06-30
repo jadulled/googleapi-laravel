@@ -12,14 +12,11 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.2.1",
         "illuminate/support": "4.2.*",
         "google/apiclient": "1.0.*@dev"
     },
     "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
         "psr-0": {
             "Pongo\\GoogleAPI\\": "src/"
         }
