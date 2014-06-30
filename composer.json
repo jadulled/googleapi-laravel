@@ -21,7 +21,6 @@
         "psr-0": {
             "Pongo\\GoogleAPI\\": "src/"
         }
-    },
-    
+    },    
     "minimum-stability": "development"
 }
