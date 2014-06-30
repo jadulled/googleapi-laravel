@@ -1,0 +1,29 @@
+{
+    "name": "pongocms/googleapi",
+    "description": "a Google API v3 wrapper for Laravel 4.x",
+    "keywords": ["laravel", "google", "api", "v3"],
+    "time": "2014-06-30",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabio Fumis",
+            "email": "f.fumis@gmail.com",
+            "homepage": "http://www.pongocms.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "google/apiclient": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Pongo\\GoogleAPI\\": "src/"
+        }
+    },
+    
+    "minimum-stability": "stable"
+}
