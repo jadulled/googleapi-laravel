@@ -42,3 +42,7 @@ Set the `GoogleapiServiceProvider` reference in your `/app/config/app.php` like 
     'Pongo\GoogleAPI\GoogleapiServiceProvider'
 );
 ```
+
+### Export and edit the configuration file
+
+Before using this package, you will need to activate a profile from Google developer and get your personal code from the [Google Developers Console](https://console.developers.google.com/) in order to obtain access and use their services through API calls.
