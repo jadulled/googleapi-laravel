@@ -69,3 +69,56 @@ return array(
 ```
 
 Set also the correct `scope` for the services you will use in your application (and remember to activate related APIs inside the Google Developers Console => APIS & AUTH => APIs). Refer to [Google API](https://developers.google.com/google-apps/app-apis) wiki for any help.
+
+## Using the GoogleAPI facade
+
+Once everything set correctly, you'll gain access to the `GoogleAPI` facade in a pure Laravel style.
+
+## Need to use the Google Calendar service?
+
+ ```php
+
+// routes.php
+
+Route::get('/', function()
+{
+	if ( Input::has('code') )
+	{
+		$code = Input::get('code');
+		
+		// authenticate with Google API
+		if ( GoogleAPI::authenticate($code) )
+		{
+			return Redirect::to('/protected');
+		}
+	}
+	
+	// get auth url
+	$url = GoogleAPI::authUrl();
+	
+	return link_to($url, 'Login with Google!');
+});
+
+Route::get('/logout', function()
+{
+	// perform a logout with redirect
+	return GoogleAPI::logout('/');
+});
+
+Route::get('/protected', function()
+{
+	// Get the google service (related scope must be set)
+	$service = GoogleAPI::getService('Calendar');
+	
+	// invoke API call
+	$calendarList = $service->calendarList->listCalendarList();
+
+	foreach ( $calendarList as $calendar )
+	{
+		echo "{$calendar->summary} <br>";
+	}
+
+	return link_to('/logout', 'Logout');
+});
+
+ ```
