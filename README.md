@@ -68,4 +68,4 @@ return array(
   );
 ```
 
-Set also the correct scope for the services you will use in your application (and remember to activate related APIs inside the Google Developers Console => APIS & AUTH => APIs).
+Set also the correct `scope` for the services you will use in your application (and remember to activate related APIs inside the Google Developers Console => APIS & AUTH => APIs). Refer to [Google API](https://developers.google.com/google-apps/app-apis) wiki for any help.
