@@ -74,7 +74,7 @@ Set also the correct `scope` for the services you will use in your application (
 
 Once everything set correctly, you'll gain access to the `GoogleAPI` facade in a pure Laravel style.
 
-## Need to use the Google Calendar service?
+### Need to use the Google Calendar service?
 
  ```php
 
