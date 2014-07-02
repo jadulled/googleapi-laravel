@@ -10,7 +10,7 @@ Add the required package to your composer.json file
 {
     "require": {
     	...
-		"pongocms/googleapi": "dev-master"
+		"pongocms/googleapi": "1.0"
 	}
 }
 ```
